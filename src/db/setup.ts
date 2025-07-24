@@ -6,7 +6,11 @@
  */
 
 import { config } from '../shared/config';
-import { getDatabaseInfo, testDatabaseConnection, environmentOps } from './utils';
+import {
+  getDatabaseInfo,
+  testDatabaseConnection,
+  environmentOps,
+} from './utils';
 
 // Helper function to safely get error message
 function getErrorMessage(error: unknown): string {
@@ -24,12 +28,14 @@ interface SetupOptions {
 async function displayDatabaseInfo() {
   console.log('📊 Current Database Information:');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-  
+
   try {
     const info = await getDatabaseInfo();
     console.log(`Environment: ${info.environment}`);
     console.log(`Database URL: ${info.url}`);
-    console.log(`Health Status: ${info.isHealthy ? '✅ Healthy' : '❌ Unhealthy'}`);
+    console.log(
+      `Health Status: ${info.isHealthy ? '✅ Healthy' : '❌ Unhealthy'}`
+    );
     console.log(`Tables: ${info.tableCount}`);
     console.log(`Migrations: ${info.migrationCount}`);
     console.log(`Max Connections: ${info.connectionConfig.maxConnections}`);
@@ -37,9 +43,12 @@ async function displayDatabaseInfo() {
     console.log(`Idle Timeout: ${info.connectionConfig.idleTimeout}s`);
     console.log(`Max Lifetime: ${info.connectionConfig.maxLifetime}s`);
   } catch (error) {
-    console.error('❌ Could not fetch database information:', getErrorMessage(error));
+    console.error(
+      '❌ Could not fetch database information:',
+      getErrorMessage(error)
+    );
   }
-  
+
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 }
 
@@ -49,39 +58,41 @@ async function setupEnvironment(options: SetupOptions = {}) {
   if (options.environment) {
     process.env.NODE_ENV = options.environment;
   }
-  
+
   const env = options.environment || config.env;
-  
+
   console.log(`🚀 Setting up database for ${env} environment...`);
   console.log(`🔧 Options: ${JSON.stringify(options, null, 2)}\n`);
-  
+
   try {
     // Re-import config to get fresh environment-specific configuration
     delete require.cache[require.resolve('../shared/config')];
     const { config: envConfig } = await import('../shared/config');
-    
-    console.log(`📍 Target Database URL: ${envConfig.database.url.replace(/:[^:@]*@/, ':***@')}`);
-    
+
+    console.log(
+      `📍 Target Database URL: ${envConfig.database.url.replace(/:[^:@]*@/, ':***@')}`
+    );
+
     // Display current database info
     await displayDatabaseInfo();
-    
+
     // Test database connection
     console.log('🔍 Testing database connection...');
     const isConnected = await testDatabaseConnection(3);
     if (!isConnected) {
       console.error('❌ Could not connect to database');
       console.error('💡 Make sure the database is running:');
-      
+
       if (env === 'development') {
         console.error('   docker-compose up -d postgres');
       } else if (env === 'test') {
         console.error('   docker-compose up -d postgres-test');
       }
-      
+
       process.exit(1);
     }
     console.log('✅ Database connection successful\n');
-    
+
     // Environment-specific setup
     switch (env) {
       case 'development':
@@ -91,37 +102,36 @@ async function setupEnvironment(options: SetupOptions = {}) {
         }
         await environmentOps.setupDevelopment();
         break;
-        
+
       case 'test':
         await environmentOps.setupTest();
         break;
-        
+
       case 'production':
         console.log('🏭 Production environment setup...');
-        
+
         if (options.reset) {
           console.error('❌ Cannot reset production database');
           process.exit(1);
         }
-        
+
         // Only run migrations in production
         const { runMigrations } = await import('./migrate');
         await runMigrations('production');
-        
+
         console.log('✅ Production setup complete (migrations only)');
         break;
-        
+
       default:
         console.error(`❌ Unknown environment: ${env}`);
         process.exit(1);
     }
-    
+
     // Display final database info
     console.log('\n📊 Final Database State:');
     await displayDatabaseInfo();
-    
+
     console.log('🎉 Database setup completed successfully!');
-    
   } catch (error) {
     console.error('❌ Database setup failed:', getErrorMessage(error));
     process.exit(1);
@@ -135,7 +145,7 @@ async function setupEnvironment(options: SetupOptions = {}) {
 
 async function main() {
   const args = process.argv.slice(2);
-  
+
   // Parse command line arguments
   const options: SetupOptions = {
     environment: undefined,
@@ -144,13 +154,13 @@ async function main() {
     skipMigrations: args.includes('--skip-migrations'),
     force: args.includes('--force') || args.includes('-f'),
   };
-  
+
   // Check for environment argument
   const envArg = args.find(arg => !arg.startsWith('-'));
   if (envArg && ['development', 'test', 'production'].includes(envArg)) {
     options.environment = envArg;
   }
-  
+
   // Handle special commands
   if (args.includes('--help') || args.includes('-h')) {
     console.log(`
@@ -178,12 +188,12 @@ Examples:
 `);
     process.exit(0);
   }
-  
+
   if (args.includes('--info') || args.includes('-i')) {
     await displayDatabaseInfo();
     process.exit(0);
   }
-  
+
   // Run setup
   await setupEnvironment(options);
 }

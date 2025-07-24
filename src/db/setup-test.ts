@@ -10,12 +10,17 @@ async function setupTestEnvironment() {
   try {
     await setupEnvironment('test');
   } catch (error) {
-    console.error('❌ Test environment setup failed:', error.message);
-    
-    if (error.message.includes('ECONNREFUSED')) {
-      console.error('💡 Make sure test database is running: docker-compose up -d postgres-test');
+    console.error(
+      '❌ Test environment setup failed:',
+      error instanceof Error ? error.message : String(error)
+    );
+
+    if (error instanceof Error && error.message.includes('ECONNREFUSED')) {
+      console.error(
+        '💡 Make sure test database is running: docker-compose up -d postgres-test'
+      );
     }
-    
+
     process.exit(1);
   }
 }

@@ -29,7 +29,7 @@ describe('Database Multi-Environment Configuration', () => {
 
   test('should get database info for development', async () => {
     const info = await devEnv.getInfo();
-    
+
     expect(info.environment).toBe('development');
     expect(info.url).toContain('blockchain_monitoring_dev');
     expect(info.isHealthy).toBe(true);
@@ -39,7 +39,7 @@ describe('Database Multi-Environment Configuration', () => {
 
   test('should get database info for test', async () => {
     const info = await testEnv.getInfo();
-    
+
     expect(info.environment).toBe('test');
     expect(info.url).toContain('blockchain_monitoring_test');
     expect(info.isHealthy).toBe(true);
@@ -50,7 +50,7 @@ describe('Database Multi-Environment Configuration', () => {
   test('should have different database URLs for different environments', async () => {
     const devInfo = await devEnv.getInfo();
     const testInfo = await testEnv.getInfo();
-    
+
     expect(devInfo.url).not.toBe(testInfo.url);
     expect(devInfo.url).toContain('5432');
     expect(testInfo.url).toContain('5433');
@@ -60,11 +60,11 @@ describe('Database Multi-Environment Configuration', () => {
     // Reset and migrate test database
     await testEnv.reset();
     await testEnv.migrate();
-    
+
     const info = await testEnv.getInfo();
     // Should have at least the migration tracking table
     expect(info.migrationCount).toBeGreaterThanOrEqual(0);
-    
+
     // Check that migration system is working by verifying drizzle_migrations table exists
     const client = testEnv.getClient();
     const migrationTable = await client`
@@ -73,7 +73,7 @@ describe('Database Multi-Environment Configuration', () => {
       WHERE table_schema = 'drizzle' 
       AND table_name = 'drizzle_migrations'
     `;
-    expect(parseInt(migrationTable[0].count)).toBe(1);
+    expect(parseInt(migrationTable[0]?.count || '0')).toBe(1);
   });
 
   test('should prevent reset on production environment', () => {
@@ -87,21 +87,20 @@ describe('Database Connection Factory', () => {
   test('should create connections with different configurations', async () => {
     const devEnv = new DatabaseEnvironment('development');
     const testEnv = new DatabaseEnvironment('test');
-    
+
     try {
       const devClient = devEnv.getClient();
       const testClient = testEnv.getClient();
-      
+
       // Test that they are different instances
       expect(devClient).not.toBe(testClient);
-      
+
       // Test that they can both execute queries
       const devResult = await devClient`SELECT 'dev' as env`;
       const testResult = await testClient`SELECT 'test' as env`;
-      
-      expect(devResult[0].env).toBe('dev');
-      expect(testResult[0].env).toBe('test');
-      
+
+      expect(devResult[0]?.env).toBe('dev');
+      expect(testResult[0]?.env).toBe('test');
     } finally {
       await devEnv.close();
       await testEnv.close();
@@ -112,15 +111,14 @@ describe('Database Connection Factory', () => {
 describe('Database Migration System', () => {
   test('should track migrations properly', async () => {
     const testEnv = new DatabaseEnvironment('test');
-    
+
     try {
       // Reset and migrate
       await testEnv.reset();
       await testEnv.migrate();
-      
+
       const info = await testEnv.getInfo();
       expect(info.migrationCount).toBeGreaterThanOrEqual(0);
-      
     } finally {
       await testEnv.close();
     }
@@ -130,11 +128,10 @@ describe('Database Migration System', () => {
 describe('Database Seeding System', () => {
   test('should prepare seeding for development', async () => {
     const devEnv = new DatabaseEnvironment('development');
-    
+
     try {
       // This should not throw an error
       await devEnv.seed();
-      
     } finally {
       await devEnv.close();
     }
@@ -142,11 +139,10 @@ describe('Database Seeding System', () => {
 
   test('should prepare seeding for test', async () => {
     const testEnv = new DatabaseEnvironment('test');
-    
+
     try {
       // This should not throw an error
       await testEnv.seed();
-      
     } finally {
       await testEnv.close();
     }

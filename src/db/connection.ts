@@ -28,15 +28,19 @@ export const db = drizzle(client, { schema });
 export { client };
 
 // Database connection factory for different environments
-export function createDatabaseConnection(databaseUrl?: string, options?: {
-  maxConnections?: number;
-  ssl?: boolean;
-  prepare?: boolean;
-}) {
+export function createDatabaseConnection(
+  databaseUrl?: string,
+  options?: {
+    maxConnections?: number;
+    ssl?: boolean;
+    prepare?: boolean;
+  }
+) {
   const url = databaseUrl || config.database.url;
   const connectionOptions = {
     max: options?.maxConnections || config.database.maxConnections || 10,
-    ssl: options?.ssl !== undefined ? options.ssl : config.database.ssl || false,
+    ssl:
+      options?.ssl !== undefined ? options.ssl : config.database.ssl || false,
     onnotice: config.env === 'development' ? console.log : undefined,
     idle_timeout: config.database.idleTimeout || 20,
     max_lifetime: config.database.maxLifetime || 1800,
@@ -44,7 +48,8 @@ export function createDatabaseConnection(databaseUrl?: string, options?: {
     transform: {
       undefined: null,
     },
-    prepare: options?.prepare !== undefined ? options.prepare : config.env !== 'test',
+    prepare:
+      options?.prepare !== undefined ? options.prepare : config.env !== 'test',
   };
 
   const newClient = postgres(url, connectionOptions);
@@ -59,7 +64,10 @@ export async function closeDatabase() {
   try {
     await client.end({ timeout: 5 });
   } catch (error) {
-    console.warn('Warning during database shutdown:', error instanceof Error ? error.message : String(error));
+    console.warn(
+      'Warning during database shutdown:',
+      error instanceof Error ? error.message : String(error)
+    );
   }
 }
 
@@ -67,11 +75,14 @@ export async function closeDatabase() {
 export async function checkDatabaseHealth(): Promise<boolean> {
   try {
     // Create a fresh connection for health check to avoid connection state issues
-    const { client: healthClient } = createDatabaseConnection(config.database.url, {
-      maxConnections: 1,
-      prepare: false,
-    });
-    
+    const { client: healthClient } = createDatabaseConnection(
+      config.database.url,
+      {
+        maxConnections: 1,
+        prepare: false,
+      }
+    );
+
     try {
       const result = await healthClient`SELECT 1 as health`;
       const isHealthy = result.length === 1 && result[0]?.health === 1;

@@ -8,12 +8,16 @@ export async function resetDatabase(force: boolean = false) {
   }
 
   console.log(`🔄 Resetting database for ${config.env} environment...`);
-  console.log(`📍 Database URL: ${config.database.url.replace(/:[^:@]*@/, ':***@')}`);
+  console.log(
+    `📍 Database URL: ${config.database.url.replace(/:[^:@]*@/, ':***@')}`
+  );
 
   if (!force && config.env !== 'test') {
     console.log('⚠️  This will permanently delete all data in the database.');
-    console.log('💡 Use --force flag or set NODE_ENV=test to skip this warning');
-    
+    console.log(
+      '💡 Use --force flag or set NODE_ENV=test to skip this warning'
+    );
+
     // In a real scenario, you might want to add a confirmation prompt
     // For now, we'll just proceed with a warning
     console.log('⏳ Proceeding in 3 seconds... (Ctrl+C to cancel)');
@@ -25,12 +29,14 @@ export async function resetDatabase(force: boolean = false) {
     console.log('🔍 Checking database connection...');
     const isHealthy = await checkDatabaseHealth();
     if (!isHealthy) {
-      console.error('❌ Cannot connect to database. Please ensure it is running.');
+      console.error(
+        '❌ Cannot connect to database. Please ensure it is running.'
+      );
       process.exit(1);
     }
 
     console.log('🗑️  Dropping all tables and schemas...');
-    
+
     // Get list of tables before dropping
     const tablesBefore = await client`
       SELECT table_name 
@@ -43,36 +49,40 @@ export async function resetDatabase(force: boolean = false) {
     await client`DROP SCHEMA IF EXISTS public CASCADE`;
     await client`CREATE SCHEMA public`;
     await client`GRANT ALL ON SCHEMA public TO public`;
-    
-    // Grant permissions to the current user (handle different user names)
-    const currentUser = client.options.user || client.options.username || 'postgres';
+
+    // Grant permissions to the current user
+    const currentUser = 'postgres'; // Default user for local development
     try {
       await client.unsafe(`GRANT ALL ON SCHEMA public TO ${currentUser}`);
     } catch (error) {
       // If grant fails, it's not critical for development/test
-      console.warn(`Warning: Could not grant permissions to user ${currentUser}:`, error.message);
+      console.warn(
+        `Warning: Could not grant permissions to user ${currentUser}:`,
+        error instanceof Error ? error.message : String(error)
+      );
     }
-    
+
     // Verify reset
     const tablesAfter = await client`
       SELECT table_name 
       FROM information_schema.tables 
       WHERE table_schema = 'public'
     `;
-    
+
     console.log('✅ Database reset completed successfully');
     console.log(`📊 Tables remaining: ${tablesAfter.length}`);
     console.log('💡 Run "bun run db:migrate" to recreate tables');
     console.log('💡 Run "bun run db:seed" to populate with sample data');
-    
   } catch (error) {
     console.error('❌ Database reset failed:', error);
-    
+
     // Provide helpful error messages
-    if (error.message.includes('ECONNREFUSED')) {
-      console.error('💡 Hint: Make sure PostgreSQL is running. Try: docker-compose up -d postgres');
+    if (error instanceof Error && error.message.includes('ECONNREFUSED')) {
+      console.error(
+        '💡 Hint: Make sure PostgreSQL is running. Try: docker-compose up -d postgres'
+      );
     }
-    
+
     process.exit(1);
   } finally {
     await client.end();

@@ -50,7 +50,7 @@ function getOptionalEnvVar(key: string, defaultValue: string): string {
 
 function getDatabaseUrl(): string {
   const env = process.env.NODE_ENV;
-  
+
   // Test environment
   if (env === 'test') {
     return getEnvVar(
@@ -58,23 +58,23 @@ function getDatabaseUrl(): string {
       'postgresql://test_user:test_password@localhost:5433/blockchain_monitoring_test'
     );
   }
-  
+
   // Production environment - prefer Neon URL
   if (env === 'production') {
     const neonUrl = process.env.NEON_DATABASE_URL;
     if (neonUrl) {
       return neonUrl;
     }
-    
+
     const supabaseUrl = process.env.SUPABASE_DATABASE_URL;
     if (supabaseUrl) {
       return supabaseUrl;
     }
-    
+
     // Fallback to regular DATABASE_URL
     return getEnvVar('DATABASE_URL');
   }
-  
+
   // Development environment
   return getEnvVar(
     'DATABASE_URL',
@@ -89,7 +89,9 @@ export const config: AppConfig = {
     url: getDatabaseUrl(),
     maxConnections: parseInt(getOptionalEnvVar('DB_MAX_CONNECTIONS', '10')),
     ssl: process.env.NODE_ENV === 'production',
-    connectionTimeout: parseInt(getOptionalEnvVar('DB_CONNECTION_TIMEOUT', '30')),
+    connectionTimeout: parseInt(
+      getOptionalEnvVar('DB_CONNECTION_TIMEOUT', '30')
+    ),
     idleTimeout: parseInt(getOptionalEnvVar('DB_IDLE_TIMEOUT', '20')),
     maxLifetime: parseInt(getOptionalEnvVar('DB_MAX_LIFETIME', '1800')), // 30 minutes
     retryAttempts: parseInt(getOptionalEnvVar('DB_RETRY_ATTEMPTS', '3')),

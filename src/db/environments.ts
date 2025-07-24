@@ -17,23 +17,27 @@ export interface EnvironmentConfig {
 export const environments: Record<string, EnvironmentConfig> = {
   development: {
     name: 'development',
-    databaseUrl: process.env.DATABASE_URL || 
+    databaseUrl:
+      process.env.DATABASE_URL ||
       'postgresql://dev_user:dev_password@localhost:5432/blockchain_monitoring_dev',
     maxConnections: 10,
     ssl: false,
   },
   test: {
     name: 'test',
-    databaseUrl: process.env.TEST_DATABASE_URL || 
+    databaseUrl:
+      process.env.TEST_DATABASE_URL ||
       'postgresql://test_user:test_password@localhost:5433/blockchain_monitoring_test',
     maxConnections: 5,
     ssl: false,
   },
   production: {
     name: 'production',
-    databaseUrl: process.env.NEON_DATABASE_URL || 
-      process.env.SUPABASE_DATABASE_URL || 
-      process.env.DATABASE_URL || '',
+    databaseUrl:
+      process.env.NEON_DATABASE_URL ||
+      process.env.SUPABASE_DATABASE_URL ||
+      process.env.DATABASE_URL ||
+      '',
     maxConnections: 20,
     ssl: true,
   },
@@ -45,13 +49,16 @@ export class DatabaseEnvironment {
   private config: EnvironmentConfig;
 
   constructor(environmentName: string) {
-    this.config = environments[environmentName];
-    if (!this.config) {
+    const config = environments[environmentName];
+    if (!config) {
       throw new Error(`Unknown environment: ${environmentName}`);
     }
+    this.config = config;
 
     if (!this.config.databaseUrl) {
-      throw new Error(`Database URL not configured for environment: ${environmentName}`);
+      throw new Error(
+        `Database URL not configured for environment: ${environmentName}`
+      );
     }
 
     this.client = postgres(this.config.databaseUrl, {
@@ -70,9 +77,12 @@ export class DatabaseEnvironment {
   async healthCheck(): Promise<boolean> {
     try {
       const result = await this.client`SELECT 1 as health`;
-      return result.length === 1 && result[0].health === 1;
+      return result.length === 1 && result[0]?.health === 1;
     } catch (error) {
-      console.error(`Health check failed for ${this.config.name}:`, error.message);
+      console.error(
+        `Health check failed for ${this.config.name}:`,
+        error instanceof Error ? error.message : String(error)
+      );
       return false;
     }
   }
@@ -89,7 +99,7 @@ export class DatabaseEnvironment {
           FROM information_schema.tables 
           WHERE table_schema = 'public'
         `;
-        tableCount = parseInt(tables[0].count);
+        tableCount = parseInt(tables[0]?.count || '0');
 
         const migrations = await this.client`
           SELECT COUNT(*) as count 
@@ -98,15 +108,18 @@ export class DatabaseEnvironment {
           AND table_name = 'drizzle_migrations'
         `;
 
-        if (parseInt(migrations[0].count) > 0) {
+        if (parseInt(migrations[0]?.count || '0') > 0) {
           const migrationRows = await this.client`
             SELECT COUNT(*) as count 
             FROM drizzle_migrations
           `;
-          migrationCount = parseInt(migrationRows[0].count);
+          migrationCount = parseInt(migrationRows[0]?.count || '0');
         }
       } catch (error) {
-        console.warn('Could not fetch database statistics:', error.message);
+        console.warn(
+          'Could not fetch database statistics:',
+          error instanceof Error ? error.message : String(error)
+        );
       }
     }
 
@@ -144,8 +157,8 @@ export class DatabaseEnvironment {
 
   async migrate(): Promise<void> {
     console.log(`📦 Running migrations for ${this.config.name}...`);
-    
-    await migrate(this.db, { 
+
+    await migrate(this.db, {
       migrationsFolder: './src/db/migrations',
       migrationsTable: 'drizzle_migrations',
     });
@@ -155,8 +168,8 @@ export class DatabaseEnvironment {
       FROM information_schema.tables 
       WHERE table_schema = 'public'
     `;
-    
-    console.log(`✅ Migrations completed - ${tables[0].count} tables`);
+
+    console.log(`✅ Migrations completed - ${tables[0]?.count || 0} tables`);
   }
 
   async seed(): Promise<void> {
@@ -165,7 +178,7 @@ export class DatabaseEnvironment {
     }
 
     console.log(`🌱 Seeding ${this.config.name} database...`);
-    
+
     // TODO: Implement actual seeding logic in task 2.2
     console.log('📝 Seeding logic will be implemented with schema in task 2.2');
     console.log('✅ Seeding preparation completed');
@@ -175,7 +188,10 @@ export class DatabaseEnvironment {
     try {
       await this.client.end({ timeout: 5 });
     } catch (error) {
-      console.warn(`Warning during ${this.config.name} database cleanup:`, error.message);
+      console.warn(
+        `Warning during ${this.config.name} database cleanup:`,
+        error instanceof Error ? error.message : String(error)
+      );
     }
   }
 
@@ -190,15 +206,17 @@ export class DatabaseEnvironment {
 
 export async function setupEnvironment(environmentName: string): Promise<void> {
   const env = new DatabaseEnvironment(environmentName);
-  
+
   try {
     console.log(`🚀 Setting up ${environmentName} environment...`);
-    
+
     // Display info
     const info = await env.getInfo();
     console.log(`📍 Database URL: ${info.url}`);
-    console.log(`🔍 Health Status: ${info.isHealthy ? '✅ Healthy' : '❌ Unhealthy'}`);
-    
+    console.log(
+      `🔍 Health Status: ${info.isHealthy ? '✅ Healthy' : '❌ Unhealthy'}`
+    );
+
     if (!info.isHealthy) {
       throw new Error(`Database is not healthy. Please ensure it is running.`);
     }
@@ -215,7 +233,6 @@ export async function setupEnvironment(environmentName: string): Promise<void> {
     await env.seed();
 
     console.log(`✅ ${environmentName} environment setup completed`);
-    
   } finally {
     await env.close();
   }
