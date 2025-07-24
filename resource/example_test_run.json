@@ -1,0 +1,2319 @@
+{
+    "numTotalTestSuites": 54,
+    "numPassedTestSuites": 27,
+    "numFailedTestSuites": 27,
+    "numPendingTestSuites": 0,
+    "numTotalTests": 148,
+    "numPassedTests": 71,
+    "numFailedTests": 0,
+    "numPendingTests": 77,
+    "numTodoTests": 0,
+    "snapshot": {
+        "added": 0,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0,
+        "didUpdate": false
+    },
+    "startTime": 1753367302669,
+    "success": false,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "🗃️  S01 Verify author filter consistency"
+                    ],
+                    "fullName": "🗃️  S01 Verify author filter consistency 📁  S01C100 should have eligibility > 0",
+                    "status": "skipped",
+                    "title": "📁  S01C100 should have eligibility > 0",
+                    "failureMessages": [],
+                    "location": {
+                        "line": 23,
+                        "column": 5
+                    },
+                    "meta": {}
+                }
+            ],
+            "startTime": 1753367302669,
+            "endTime": 1753367302669,
+            "status": "failed",
+            "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+            "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-author-filter-consistency.ts"
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "🗃️  S02 Verifying deposit for associated nimbus ids"
+                    ],
+                    "fullName": "🗃️  S02 Verifying deposit for associated nimbus ids 📁  S02C100 should have a deposit for each associated nimbus id",
+                    "status": "skipped",
+                    "title": "📁  S02C100 should have a deposit for each associated nimbus id",
+                    "failureMessages": [],
+                    "location": {
+                        "line": 62,
+                        "column": 5
+                    },
+                    "meta": {}
+                }
+            ],
+            "startTime": 1753367302669,
+            "endTime": 1753367302669,
+            "status": "failed",
+            "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... i  S03 Verifying balances consistency"
+        ],
+        "fullName": "🗃  S03 Verifying balances consistency 📁  S03C100 should have matching deposit/reserved",
+        "status": "skipped","tit
+🗃️le":"📁  S03C100 should have matching deposit/reserved","failureMessages":[],"location":{"line":982,"column":5},"meta":{}},{"ancestorTitles":["🗃️  S03 Verifying balances consistency"],"fullName":"🗃️  S03 Verifying balances consistency 📁  S03C200 should match total locks","status":"skipped","title":"📁  S03C200 should match total locks","failureMessages":[],"location":{"line":1015,"column":5},"meta":{}},{"ancestorTitles":["🗃️  S03 Verifying balances consistency"],"fullName":"🗃️  S03 Verifying balances consistency 📁  S03C300 should match total supply","status":"skipped","title":"📁  S03C300 should match total supply","failureMessages":[],"location":{"line":1029,"column":5},"meta":{}}],"startTime":1753367302669,"endTime":1753367302669,"status":"failed","message":"","name":"/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-balances-consistency.ts"},{"assertionResults":[{"ancestorTitles":["🗃️  S04 Parachain blocks should be finalized"],"fullName":"🗃️  S04 Parachain blocks should be finalized 📁  S04C100 should have a recently finalized block","status":"skipped","title":"📁  S04C100 should have a recently finalized block","failureMessages":[],"location":{"line":31,"column":5},"meta":{}},{"ancestorTitles":["🗃️  S04 Parachain blocks should be finalized"],"fullName":"🗃️  S04 Parachain blocks should be finalized 📁  S04C200 should have a recently finalized eth block","status":"skipped","title":"📁  S04C200 should have a recently finalized eth block","failureMessages":[],"location":{"line":44,"column":5},"meta":{}},{"ancestorTitles":["🗃️  S04 Parachain blocks should be finalized"],"fullName":"🗃️  S04 Parachain blocks should be finalized 📁  S04C300 should have only finalized blocks in the past 2.00 hours #C300","status":"skipped","title":"📁  S04C300 should have only finalized blocks in the past 2.00 hours #C300","failureMessages":[],"location":{"line":63,"column":5},"meta":{}}],"startTime":1753367302669,"endTime":1753367302669,"status":"failed","message":"Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-block-finalized.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S05 Verifying weights of blocks in the past 0.50 hours"
+                ],
+                "fullName": "🗃️  S05 Verifying weights of blocks in the past 0.50 hours 📁  S05C100 should be returning unique block hashes in array",
+                "status": "skipped",
+                "title": "📁  S05C100 should be returning unique block hashes in array",
+                "failureMessages": [],
+                "location": {
+                    "line": 85,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S05 Verifying weights of blocks in the past 0.50 hours"
+                ],
+                "fullName": "🗃️  S05 Verifying weights of blocks in the past 0.50 hours 📁  S05C200 normal usage should be less than normal dispatch class limits",
+                "status": "skipped",
+                "title": "📁  S05C200 normal usage should be less than normal dispatch class limits",
+                "failureMessages": [],
+                "location": {
+                    "line": 98,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S05 Verifying weights of blocks in the past 0.50 hours"
+                ],
+                "fullName": "🗃️  S05 Verifying weights of blocks in the past 0.50 hours 📁  S05C300 operational usage should be less than dispatch class limits",
+                "status": "skipped",
+                "title": "📁  S05C300 operational usage should be less than dispatch class limits",
+                "failureMessages": [],
+                "location": {
+                    "line": 120,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S05 Verifying weights of blocks in the past 0.50 hours"
+                ],
+                "fullName": "🗃️  S05 Verifying weights of blocks in the past 0.50 hours 📁  S05C400 should roughly have a block weight mostly composed of transactions",
+                "status": "skipped",
+                "title": "📁  S05C400 should roughly have a block weight mostly composed of transactions",
+                "failureMessages": [],
+                "location": {
+                    "line": 145,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S05 Verifying weights of blocks in the past 0.50 hours"
+                ],
+                "fullName": "🗃️  S05 Verifying weights of blocks in the past 0.50 hours 📁  S05C500 should have total normal weight matching the signed extrinsics",
+                "status": "skipped",
+                "title": "📁  S05C500 should have total normal weight matching the signed extrinsics",
+                "failureMessages": [],
+                "location": {
+                    "line": 212,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S05 Verifying weights of blocks in the past 0.50 hours"
+                ],
+                "fullName": "🗃️  S05 Verifying weights of blocks in the past 0.50 hours 📁  S05C600 should have total gas charged similar to eth extrinsics",
+                "status": "skipped",
+                "title": "📁  S05C600 should have total gas charged similar to eth extrinsics",
+                "failureMessages": [],
+                "location": {
+                    "line": 286,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-block-weights.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S06 Dynamic fees in past 2.00 hours should be correct"
+                ],
+                "fullName": "🗃️  S06 Dynamic fees in past 2.00 hours should be correct 📁  S06C100 Block utilization by weight corresponds to fee multiplier",
+                "status": "skipped",
+                "title": "📁  S06C100 Block utilization by weight corresponds to fee multiplier",
+                "failureMessages": [],
+                "location": {
+                    "line": 268,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S06 Dynamic fees in past 2.00 hours should be correct"
+                ],
+                "fullName": "🗃️  S06 Dynamic fees in past 2.00 hours should be correct 📁  S06C200 Block utilization from normal class exts corresponds to fee multiplier",
+                "status": "skipped",
+                "title": "📁  S06C200 Block utilization from normal class exts corresponds to fee multiplier",
+                "failureMessages": [],
+                "location": {
+                    "line": 363,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S06 Dynamic fees in past 2.00 hours should be correct"
+                ],
+                "fullName": "🗃️  S06 Dynamic fees in past 2.00 hours should be correct 📁  S06C300 BaseFeePerGas is within expected min/max",
+                "status": "skipped",
+                "title": "📁  S06C300 BaseFeePerGas is within expected min/max",
+                "failureMessages": [],
+                "location": {
+                    "line": 447,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S06 Dynamic fees in past 2.00 hours should be correct"
+                ],
+                "fullName": "🗃️  S06 Dynamic fees in past 2.00 hours should be correct 📁  S06C400 BaseFeePerGas is correctly calculated",
+                "status": "skipped",
+                "title": "📁  S06C400 BaseFeePerGas is correctly calculated",
+                "failureMessages": [],
+                "location": {
+                    "line": 475,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S06 Dynamic fees in past 2.00 hours should be correct"
+                ],
+                "fullName": "🗃️  S06 Dynamic fees in past 2.00 hours should be correct 📁  S06C500 Ext fee matches on chain",
+                "status": "skipped",
+                "title": "📁  S06C500 Ext fee matches on chain",
+                "failureMessages": [],
+                "location": {
+                    "line": 517,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-dynamic-fees.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S07 RPC Eth ParentHash"
+                ],
+                "fullName": "🗃️  S07 RPC Eth ParentHash 📁  S07C100 should return correct parent hash via rpc for current block",
+                "status": "skipped",
+                "title": "📁  S07C100 should return correct parent hash via rpc for current block",
+                "failureMessages": [],
+                "location": {
+                    "line": 24,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S07 RPC Eth ParentHash"
+                ],
+                "fullName": "🗃️  S07 RPC Eth ParentHash 📁  S07C200 should return correct parent hash via rpc for block #1648995",
+                "status": "skipped",
+                "title": "📁  S07C200 should return correct parent hash via rpc for block #1648995",
+                "failureMessages": [],
+                "location": {
+                    "line": 49,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-eth-parent-hash-bad-block-fix.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S08 Ethereum contract bytecode should not be large"
+                ],
+                "fullName": "🗃️  S08 Ethereum contract bytecode should not be large 📁  S08C100 should not have excessively long account codes",
+                "status": "skipped",
+                "title": "📁  S08C100 should not have excessively long account codes",
+                "failureMessages": [],
+                "location": {
+                    "line": 69,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-ethereum-contract-code.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S09 Ethereum CurrentBlock and CurrentReceipts should never be 0x00"
+                ],
+                "fullName": "🗃️  S09 Ethereum CurrentBlock and CurrentReceipts should never be 0x00 📁  S09C100 should have non default field values",
+                "status": "skipped",
+                "title": "📁  S09C100 should have non default field values",
+                "failureMessages": [],
+                "location": {
+                    "line": 38,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-ethereum-current-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S10 Ethereum secondary DB should contains valid data"
+                ],
+                "fullName": "🗃️  S10 Ethereum secondary DB should contains valid data 📁  S10C100 should get the same response payload on byNumber and byHash requests",
+                "status": "skipped",
+                "title": "📁  S10C100 should get the same response payload on byNumber and byHash requests",
+                "failureMessages": [],
+                "location": {
+                    "line": 12,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-ethereum-db-mapping.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly"
+                ],
+                "fullName": "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly 📁  S11C100 successful eth exts should always pays_fee: no",
+                "status": "skipped",
+                "title": "📁  S11C100 successful eth exts should always pays_fee: no",
+                "failureMessages": [],
+                "location": {
+                    "line": 75,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly"
+                ],
+                "fullName": "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly 📁  S11C200 should have have ExtrinsicSuccess for all ethereum.transact",
+                "status": "skipped",
+                "title": "📁  S11C200 should have have ExtrinsicSuccess for all ethereum.transact",
+                "failureMessages": [],
+                "location": {
+                    "line": 132,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly"
+                ],
+                "fullName": "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly 📁  S11C300 should have matching amounts in emulated block as there are ethereum.executed events",
+                "status": "skipped",
+                "title": "📁  S11C300 should have matching amounts in emulated block as there are ethereum.executed events",
+                "failureMessages": [],
+                "location": {
+                    "line": 189,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly"
+                ],
+                "fullName": "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly 📁  S11C400 should have a receipt in emulated block for each ethereum.executed event",
+                "status": "skipped",
+                "title": "📁  S11C400 should have a receipt in emulated block for each ethereum.executed event",
+                "failureMessages": [],
+                "location": {
+                    "line": 223,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-ethereum-failures.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits"
+                ],
+                "fullName": "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits 📁  S12C100 should make sure xcm fee assets accepted is <=> than existing assets",
+                "status": "skipped",
+                "title": "📁  S12C100 should make sure xcm fee assets accepted is <=> than existing assets",
+                "failureMessages": [],
+                "location": {
+                    "line": 72,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits"
+                ],
+                "fullName": "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits 📁  S12C200 should make sure assetId->AssetType matches AssetType->AssetId mapping",
+                "status": "skipped",
+                "title": "📁  S12C200 should make sure assetId->AssetType matches AssetType->AssetId mapping",
+                "failureMessages": [],
+                "location": {
+                    "line": 89,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits"
+                ],
+                "fullName": "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits 📁  S12C300 should make sure existing xcm payment assets exist in mapping",
+                "status": "skipped",
+                "title": "📁  S12C300 should make sure existing xcm payment assets exist in mapping",
+                "failureMessages": [],
+                "location": {
+                    "line": 116,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits"
+                ],
+                "fullName": "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits 📁  S12C400 should make sure managed assets have live status",
+                "status": "skipped",
+                "title": "📁  S12C400 should make sure managed assets have live status",
+                "failureMessages": [],
+                "location": {
+                    "line": 154,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits"
+                ],
+                "fullName": "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits 📁  S12C500 should make sure all live assets are managed",
+                "status": "skipped",
+                "title": "📁  S12C500 should make sure all live assets are managed",
+                "failureMessages": [],
+                "location": {
+                    "line": 181,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits"
+                ],
+                "fullName": "🗃️  S12 Verifying foreign asset count, mapping, assetIds and deposits 📁  S12C500 should make sure all live assets are supported by xcmWeightManager",
+                "status": "skipped",
+                "title": "📁  S12C500 should make sure all live assets are supported by xcmWeightManager",
+                "failureMessages": [],
+                "location": {
+                    "line": 208,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-foreign-asset-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C100 should not have UnsupportedVersion errors on DMP queue",
+                "status": "skipped",
+                "title": "📁  S13C100 should not have UnsupportedVersion errors on DMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 126,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C200 should not have BadVersion errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C200 should not have BadVersion errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 170,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C300 should not have Barrier errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C300 should not have Barrier errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 210,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C400 should not have Overflow errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C400 should not have Overflow errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 252,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C500 should not have MultiLocationFull errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C500 should not have MultiLocationFull errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 294,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C600 should not have AssetNotFound errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C600 should not have AssetNotFound errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 343,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C700 should not have DestinationUnsupported errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C700 should not have DestinationUnsupported errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 387,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C800 should not have Transport errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C800 should not have Transport errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 436,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C900 should not have FailedToDecode errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C900 should not have FailedToDecode errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 478,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C1000 should not have UnhandledXcmVersion errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C1000 should not have UnhandledXcmVersion errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 523,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious"
+                ],
+                "fullName": "🗃️  S13 Foreign XCM Failures in past 0.17 hours should not be serious 📁  S13C1100 should not have WeightNotComputable errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S13C1100 should not have WeightNotComputable errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 572,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-foreign-xcm-failures.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C100 can call debug_traceTransaction",
+                "status": "skipped",
+                "title": "📁  S14C100 can call debug_traceTransaction",
+                "failureMessages": [],
+                "location": {
+                    "line": 45,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C200 can call eth_getTransactionReceipt",
+                "status": "passed",
+                "title": "📁  S14C200 can call eth_getTransactionReceipt",
+                "duration": 1227.298257,
+                "failureMessages": [],
+                "location": {
+                    "line": 89,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C300 can call eth_protocolVersion",
+                "status": "passed",
+                "title": "📁  S14C300 can call eth_protocolVersion",
+                "duration": 33.1581070000002,
+                "failureMessages": [],
+                "location": {
+                    "line": 133,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C400 can call eth_syncing",
+                "status": "passed",
+                "title": "📁  S14C400 can call eth_syncing",
+                "duration": 17.330920999999762,
+                "failureMessages": [],
+                "location": {
+                    "line": 145,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C500 can call eth_hashrate",
+                "status": "passed",
+                "title": "📁  S14C500 can call eth_hashrate",
+                "duration": 7.187595999999758,
+                "failureMessages": [],
+                "location": {
+                    "line": 157,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C600 can call eth_coinbase",
+                "status": "passed",
+                "title": "📁  S14C600 can call eth_coinbase",
+                "duration": 19.492817999999716,
+                "failureMessages": [],
+                "location": {
+                    "line": 169,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C700 can call eth_mining",
+                "status": "passed",
+                "title": "📁  S14C700 can call eth_mining",
+                "duration": 16.755522999999812,
+                "failureMessages": [],
+                "location": {
+                    "line": 181,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C800 can call eth_chainId",
+                "status": "passed",
+                "title": "📁  S14C800 can call eth_chainId",
+                "duration": 5.878807000000052,
+                "failureMessages": [],
+                "location": {
+                    "line": 195,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C900 can call eth_gasPrice",
+                "status": "passed",
+                "title": "📁  S14C900 can call eth_gasPrice",
+                "duration": 6.283816000000115,
+                "failureMessages": [],
+                "location": {
+                    "line": 207,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1000 can call eth_accounts",
+                "status": "passed",
+                "title": "📁  S14C1000 can call eth_accounts",
+                "duration": 6.193605000000389,
+                "failureMessages": [],
+                "location": {
+                    "line": 219,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1100 can call eth_blockNumber",
+                "status": "passed",
+                "title": "📁  S14C1100 can call eth_blockNumber",
+                "duration": 5.563584999999875,
+                "failureMessages": [],
+                "location": {
+                    "line": 231,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1200 can call eth_getBalance",
+                "status": "passed",
+                "title": "📁  S14C1200 can call eth_getBalance",
+                "duration": 6.134086000000025,
+                "failureMessages": [],
+                "location": {
+                    "line": 243,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1300 can call eth_getStorageAt",
+                "status": "passed",
+                "title": "📁  S14C1300 can call eth_getStorageAt",
+                "duration": 7.168889999999919,
+                "failureMessages": [],
+                "location": {
+                    "line": 257,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1400 can call eth_getBlockByHash",
+                "status": "passed",
+                "title": "📁  S14C1400 can call eth_getBlockByHash",
+                "duration": 6.625742000000173,
+                "failureMessages": [],
+                "location": {
+                    "line": 277,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1500 can call eth_getBlockByNumber",
+                "status": "passed",
+                "title": "📁  S14C1500 can call eth_getBlockByNumber",
+                "duration": 7.394744999999602,
+                "failureMessages": [],
+                "location": {
+                    "line": 289,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1600 can call eth_getTransactionCount",
+                "status": "passed",
+                "title": "📁  S14C1600 can call eth_getTransactionCount",
+                "duration": 9.533058999999412,
+                "failureMessages": [],
+                "location": {
+                    "line": 301,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1700 can call eth_getBlockTransactionCountByHash",
+                "status": "passed",
+                "title": "📁  S14C1700 can call eth_getBlockTransactionCountByHash",
+                "duration": 6.974084999999832,
+                "failureMessages": [],
+                "location": {
+                    "line": 313,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1800 can call eth_getBlockTransactionCountByNumber",
+                "status": "passed",
+                "title": "📁  S14C1800 can call eth_getBlockTransactionCountByNumber",
+                "duration": 5.770032999999785,
+                "failureMessages": [],
+                "location": {
+                    "line": 325,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C1900 can call eth_getUncleCountByBlockHash",
+                "status": "passed",
+                "title": "📁  S14C1900 can call eth_getUncleCountByBlockHash",
+                "duration": 5.826113000000078,
+                "failureMessages": [],
+                "location": {
+                    "line": 337,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2000 can call eth_getCode",
+                "status": "passed",
+                "title": "📁  S14C2000 can call eth_getCode",
+                "duration": 6.805796999999984,
+                "failureMessages": [],
+                "location": {
+                    "line": 349,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2100 can call eth_estimateGas",
+                "status": "passed",
+                "title": "📁  S14C2100 can call eth_estimateGas",
+                "duration": 8.583690000000388,
+                "failureMessages": [],
+                "location": {
+                    "line": 361,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2200 can call eth_feeHistory",
+                "status": "passed",
+                "title": "📁  S14C2200 can call eth_feeHistory",
+                "duration": 5.770965000000615,
+                "failureMessages": [],
+                "location": {
+                    "line": 382,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2300 can call eth_getTransactionByBlockHashAndIndex",
+                "status": "passed",
+                "title": "📁  S14C2300 can call eth_getTransactionByBlockHashAndIndex",
+                "duration": 32.3773769999998,
+                "failureMessages": [],
+                "location": {
+                    "line": 394,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2400 can call eth_getTransactionByBlockNumberAndIndex",
+                "status": "passed",
+                "title": "📁  S14C2400 can call eth_getTransactionByBlockNumberAndIndex",
+                "duration": 16.987804000000324,
+                "failureMessages": [],
+                "location": {
+                    "line": 413,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2500 can call eth_getUncleByBlockHashAndIndex",
+                "status": "passed",
+                "title": "📁  S14C2500 can call eth_getUncleByBlockHashAndIndex",
+                "duration": 4.781073000000106,
+                "failureMessages": [],
+                "location": {
+                    "line": 431,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2600 can call eth_getUncleByBlockNumberAndIndex",
+                "status": "passed",
+                "title": "📁  S14C2600 can call eth_getUncleByBlockNumberAndIndex",
+                "duration": 5.978086000000076,
+                "failureMessages": [],
+                "location": {
+                    "line": 443,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2700 can call eth_getLogs",
+                "status": "passed",
+                "title": "📁  S14C2700 can call eth_getLogs",
+                "duration": 7.572542000000794,
+                "failureMessages": [],
+                "location": {
+                    "line": 455,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2800 can call eth_submitWork",
+                "status": "passed",
+                "title": "📁  S14C2800 can call eth_submitWork",
+                "duration": 11.840984999999819,
+                "failureMessages": [],
+                "location": {
+                    "line": 467,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C2900 can call eth_submitHashrate",
+                "status": "passed",
+                "title": "📁  S14C2900 can call eth_submitHashrate",
+                "duration": 5.911780999999792,
+                "failureMessages": [],
+                "location": {
+                    "line": 483,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C3000 can call eth_newFilter",
+                "status": "passed",
+                "title": "📁  S14C3000 can call eth_newFilter",
+                "duration": 7.765733000000182,
+                "failureMessages": [],
+                "location": {
+                    "line": 498,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C3100 can call eth_newBlockFilter",
+                "status": "passed",
+                "title": "📁  S14C3100 can call eth_newBlockFilter",
+                "duration": 5.656983999999284,
+                "failureMessages": [],
+                "location": {
+                    "line": 518,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C3200 can call eth_getFilterChanges",
+                "status": "passed",
+                "title": "📁  S14C3200 can call eth_getFilterChanges",
+                "duration": 11.02835899999991,
+                "failureMessages": [],
+                "location": {
+                    "line": 538,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C3300 can call eth_getFilterLogs",
+                "status": "passed",
+                "title": "📁  S14C3300 can call eth_getFilterLogs",
+                "duration": 22.83198100000027,
+                "failureMessages": [],
+                "location": {
+                    "line": 562,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S14 Verifying historic compatibility"
+                ],
+                "fullName": "🗃️  S14 Verifying historic compatibility 📁  S14C3400 can call eth_uninstallFilter",
+                "status": "passed",
+                "title": "📁  S14C3400 can call eth_uninstallFilter",
+                "duration": 13.4769780000006,
+                "failureMessages": [],
+                "location": {
+                    "line": 586,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367579876,
+        "endTime": 1753367581444.477,
+        "status": "passed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-historic-compatibility.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S15 Verify regressions which happened in the past by reading historical state"
+                ],
+                "fullName": "🗃️  S15 Verify regressions which happened in the past by reading historical state 📁  S15C001 Verify all bad block regression cases",
+                "status": "skipped",
+                "title": "📁  S15C001 Verify all bad block regression cases",
+                "failureMessages": [],
+                "location": {
+                    "line": 119,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S15 Verify regressions which happened in the past by reading historical state"
+                ],
+                "fullName": "🗃️  S15 Verify regressions which happened in the past by reading historical state 📁  S15C002 Verify bad transaction tracing case",
+                "status": "skipped",
+                "title": "📁  S15C002 Verify bad transaction tracing case",
+                "failureMessages": [],
+                "location": {
+                    "line": 153,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S15 Verify regressions which happened in the past by reading historical state"
+                ],
+                "fullName": "🗃️  S15 Verify regressions which happened in the past by reading historical state 📁  S15C003 Verify tracing works for transactions generated by all runtime versions",
+                "status": "skipped",
+                "title": "📁  S15C003 Verify tracing works for transactions generated by all runtime versions",
+                "failureMessages": [],
+                "location": {
+                    "line": 184,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S15 Verify regressions which happened in the past by reading historical state"
+                ],
+                "fullName": "🗃️  S15 Verify regressions which happened in the past by reading historical state 📁  S15C004 Moonriver: eth_getLogs with more than 1024 addresses filtered should return logs",
+                "status": "skipped",
+                "title": "📁  S15C004 Moonriver: eth_getLogs with more than 1024 addresses filtered should return logs",
+                "failureMessages": [],
+                "location": {
+                    "line": 215,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-old-regressions.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S16 Verify orbiters"
+                ],
+                "fullName": "🗃️  S16 Verify orbiters 📁  S16C100 should have reserved tokens",
+                "status": "skipped",
+                "title": "📁  S16C100 should have reserved tokens",
+                "failureMessages": [],
+                "location": {
+                    "line": 52,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S16 Verify orbiters"
+                ],
+                "fullName": "🗃️  S16 Verify orbiters 📁  S16C200 should be registered if in a pool",
+                "status": "skipped",
+                "title": "📁  S16C200 should be registered if in a pool",
+                "failureMessages": [],
+                "location": {
+                    "line": 86,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S16 Verify orbiters"
+                ],
+                "fullName": "🗃️  S16 Verify orbiters 📁  S16C300 should not have more pool than the max allowed",
+                "status": "skipped",
+                "title": "📁  S16C300 should not have more pool than the max allowed",
+                "failureMessages": [],
+                "location": {
+                    "line": 125,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S16 Verify orbiters"
+                ],
+                "fullName": "🗃️  S16 Verify orbiters 📁  S16C400 should have matching rewards",
+                "status": "skipped",
+                "title": "📁  S16C400 should have matching rewards",
+                "failureMessages": [],
+                "location": {
+                    "line": 137,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-orbiter-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S17 Polkadot API - Storage items"
+                ],
+                "fullName": "🗃️  S17 Polkadot API - Storage items 📁  S17C100 should be decodable",
+                "status": "skipped",
+                "title": "📁  S17C100 should be decodable",
+                "failureMessages": [],
+                "location": {
+                    "line": 42,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-polkadot-decoding.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S18 Verify account proxies created"
+                ],
+                "fullName": "🗃️  S18 Verify account proxies created 📁  S18C100 should have no more than the maximum allowed proxies",
+                "status": "skipped",
+                "title": "📁  S18C100 should have no more than the maximum allowed proxies",
+                "failureMessages": [],
+                "location": {
+                    "line": 68,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S18 Verify account proxies created"
+                ],
+                "fullName": "🗃️  S18 Verify account proxies created 📁  S18C200 should have a maximum allowed proxies of 32",
+                "status": "skipped",
+                "title": "📁  S18C200 should have a maximum allowed proxies of 32",
+                "failureMessages": [],
+                "location": {
+                    "line": 104,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S18 Verify account proxies created"
+                ],
+                "fullName": "🗃️  S18 Verify account proxies created 📁  S18C300 should only be possible for proxies of non-smart contract accounts",
+                "status": "skipped",
+                "title": "📁  S18C300 should only be possible for proxies of non-smart contract accounts",
+                "failureMessages": [],
+                "location": {
+                    "line": 143,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-proxy-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C100 should have fewer Requests than RequestCount",
+                "status": "passed",
+                "title": "📁  S19C100 should have fewer Requests than RequestCount",
+                "duration": 0.9298029999999926,
+                "failureMessages": [],
+                "location": {
+                    "line": 81,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C200 should not have requestId above RequestCount",
+                "status": "passed",
+                "title": "📁  S19C200 should not have requestId above RequestCount",
+                "duration": 0.17023900000003778,
+                "failureMessages": [],
+                "location": {
+                    "line": 95,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C300 should not have results without a matching request",
+                "status": "passed",
+                "title": "📁  S19C300 should not have results without a matching request",
+                "duration": 27.942050999999992,
+                "failureMessages": [],
+                "location": {
+                    "line": 108,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C400 all results should have correct request counters",
+                "status": "passed",
+                "title": "📁  S19C400 all results should have correct request counters",
+                "duration": 1.6403430000000299,
+                "failureMessages": [],
+                "location": {
+                    "line": 193,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C500 should have updated VRF output",
+                "status": "passed",
+                "title": "📁  S19C500 should have updated VRF output",
+                "duration": 126.87666399999989,
+                "failureMessages": [],
+                "location": {
+                    "line": 266,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C600 should have correct total deposits",
+                "status": "passed",
+                "title": "📁  S19C600 should have correct total deposits",
+                "duration": 17.079923000000235,
+                "failureMessages": [],
+                "location": {
+                    "line": 311,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C700 available randomness outputs should be random",
+                "status": "passed",
+                "title": "📁  S19C700 available randomness outputs should be random",
+                "duration": 1.696950999999899,
+                "failureMessages": [],
+                "location": {
+                    "line": 344,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S19 Verify randomness consistency"
+                ],
+                "fullName": "🗃️  S19 Verify randomness consistency 📁  S19C800 local VRF output should be random",
+                "status": "passed",
+                "title": "📁  S19C800 local VRF output should be random",
+                "duration": 2.1583550000000287,
+                "failureMessages": [],
+                "location": {
+                    "line": 392,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367585346,
+        "endTime": 1753367585525.1584,
+        "status": "passed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-randomness-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C100 should have matching indices for HRMP.InitOpenChannel",
+                "status": "passed",
+                "title": "📁  S20C100 should have matching indices for HRMP.InitOpenChannel",
+                "duration": 25.244023000000197,
+                "failureMessages": [],
+                "location": {
+                    "line": 55,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C200 should have matching indices for HRMP.AcceptOpenChannel",
+                "status": "passed",
+                "title": "📁  S20C200 should have matching indices for HRMP.AcceptOpenChannel",
+                "duration": 13.92456200000015,
+                "failureMessages": [],
+                "location": {
+                    "line": 70,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C300 should have matching indices for HRMP.CloseChannel",
+                "status": "passed",
+                "title": "📁  S20C300 should have matching indices for HRMP.CloseChannel",
+                "duration": 14.630357999999887,
+                "failureMessages": [],
+                "location": {
+                    "line": 85,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C400 should have matching indices for Staking.Bond",
+                "status": "passed",
+                "title": "📁  S20C400 should have matching indices for Staking.Bond",
+                "duration": 15.28331900000012,
+                "failureMessages": [],
+                "location": {
+                    "line": 102,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C500 should have matching indices for Staking.BondExtra",
+                "status": "passed",
+                "title": "📁  S20C500 should have matching indices for Staking.BondExtra",
+                "duration": 13.813094000000092,
+                "failureMessages": [],
+                "location": {
+                    "line": 117,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C600 should have matching indices for Staking.Chill",
+                "status": "passed",
+                "title": "📁  S20C600 should have matching indices for Staking.Chill",
+                "duration": 13.689829999999802,
+                "failureMessages": [],
+                "location": {
+                    "line": 127,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C700 should have matching indices for Staking.Nominate",
+                "status": "passed",
+                "title": "📁  S20C700 should have matching indices for Staking.Nominate",
+                "duration": 15.24700699999994,
+                "failureMessages": [],
+                "location": {
+                    "line": 138,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C800 should have matching indices for Staking.Rebond",
+                "status": "passed",
+                "title": "📁  S20C800 should have matching indices for Staking.Rebond",
+                "duration": 13.574147000000266,
+                "failureMessages": [],
+                "location": {
+                    "line": 153,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C900 should have matching indices for Staking.SetController",
+                "status": "passed",
+                "title": "📁  S20C900 should have matching indices for Staking.SetController",
+                "duration": 13.059142000000065,
+                "failureMessages": [],
+                "location": {
+                    "line": 163,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C1000 should have matching indices for Staking.SetPayee",
+                "status": "passed",
+                "title": "📁  S20C1000 should have matching indices for Staking.SetPayee",
+                "duration": 17.203942000000097,
+                "failureMessages": [],
+                "location": {
+                    "line": 178,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C1100 should have matching indices for Staking.Unbond",
+                "status": "passed",
+                "title": "📁  S20C1100 should have matching indices for Staking.Unbond",
+                "duration": 13.752313999999842,
+                "failureMessages": [],
+                "location": {
+                    "line": 188,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C1200 should have matching indices for Staking.Validate",
+                "status": "passed",
+                "title": "📁  S20C1200 should have matching indices for Staking.Validate",
+                "duration": 13.835966999999982,
+                "failureMessages": [],
+                "location": {
+                    "line": 198,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C1300 should have matching indices for Staking.WithdrawUnbonded",
+                "status": "passed",
+                "title": "📁  S20C1300 should have matching indices for Staking.WithdrawUnbonded",
+                "duration": 13.29196600000023,
+                "failureMessages": [],
+                "location": {
+                    "line": 213,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C1400 should have matching indices for Utility.asDerivative in V1",
+                "status": "passed",
+                "title": "📁  S20C1400 should have matching indices for Utility.asDerivative in V1",
+                "duration": 16.537483000000066,
+                "failureMessages": [],
+                "location": {
+                    "line": 223,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S20 Relay chain Module:Method indices should match our encoding"
+                ],
+                "fullName": "🗃️  S20 Relay chain Module:Method indices should match our encoding 📁  S20C1500 should have matching indices for Utility.asDerivative in V2",
+                "status": "passed",
+                "title": "📁  S20C1500 should have matching indices for Utility.asDerivative in V2",
+                "duration": 2.685410000000047,
+                "failureMessages": [],
+                "location": {
+                    "line": 244,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367607053,
+        "endTime": 1753367607269.6853,
+        "status": "passed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-relay-indices.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S21 Verify XCM weight fees for relay"
+                ],
+                "fullName": "🗃️  S21 Verify XCM weight fees for relay 📁  S21C100 should have value over relay expected fees",
+                "status": "skipped",
+                "title": "📁  S21C100 should have value over relay expected fees",
+                "failureMessages": [],
+                "location": {
+                    "line": 30,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-relay-xcm-fees.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C100 candidate totalCounted matches top X delegations",
+                "status": "passed",
+                "title": "📁  S22C100 candidate totalCounted matches top X delegations",
+                "duration": 18.638492000000042,
+                "failureMessages": [],
+                "location": {
+                    "line": 83,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C200 candidate topDelegator total matches the sum",
+                "status": "passed",
+                "title": "📁  S22C200 candidate topDelegator total matches the sum",
+                "duration": 11.9653100000005,
+                "failureMessages": [],
+                "location": {
+                    "line": 111,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C300 candidate topDelegator total matches candidate totalCounted - bond",
+                "status": "passed",
+                "title": "📁  S22C300 candidate topDelegator total matches candidate totalCounted - bond",
+                "duration": 5.4145989999997255,
+                "failureMessages": [],
+                "location": {
+                    "line": 128,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C400 candidate topDelegations matches top X delegators",
+                "status": "passed",
+                "title": "📁  S22C400 candidate topDelegations matches top X delegators",
+                "duration": 198.14187700000002,
+                "failureMessages": [],
+                "location": {
+                    "line": 144,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C500 all delegators lessTotal matches revoke/decrease requests",
+                "status": "passed",
+                "title": "📁  S22C500 all delegators lessTotal matches revoke/decrease requests",
+                "duration": 151.38816599999973,
+                "failureMessages": [],
+                "location": {
+                    "line": 194,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C600 candidatePool matches candidateInfo",
+                "status": "passed",
+                "title": "📁  S22C600 candidatePool matches candidateInfo",
+                "duration": 3.5915700000005018,
+                "failureMessages": [],
+                "location": {
+                    "line": 254,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C700 round length is more than minimum selected candidate count",
+                "status": "passed",
+                "title": "📁  S22C700 round length is more than minimum selected candidate count",
+                "duration": 0.21624299999984942,
+                "failureMessages": [],
+                "location": {
+                    "line": 289,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C800 total selected is more than minimum selected candidate count",
+                "status": "passed",
+                "title": "📁  S22C800 total selected is more than minimum selected candidate count",
+                "duration": 0.09450500000002648,
+                "failureMessages": [],
+                "location": {
+                    "line": 300,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C900 current selected candidates are more than minimum required",
+                "status": "skipped",
+                "title": "📁  S22C900 current selected candidates are more than minimum required",
+                "failureMessages": [],
+                "location": {
+                    "line": 311,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C1000 current selected candidates are less than or equal to stored total",
+                "status": "passed",
+                "title": "📁  S22C1000 current selected candidates are less than or equal to stored total",
+                "duration": 0.16830800000025192,
+                "failureMessages": [],
+                "location": {
+                    "line": 323,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S22 Verify staking consistency"
+                ],
+                "fullName": "🗃️  S22 Verify staking consistency 📁  S22C1100 round length is more than current selected candidates",
+                "status": "passed",
+                "title": "📁  S22C1100 round length is more than current selected candidates",
+                "duration": 0.10921799999960058,
+                "failureMessages": [],
+                "location": {
+                    "line": 334,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367603283,
+        "endTime": 1753367603673.2163,
+        "status": "passed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-staking-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S23 When verifying ParachainStaking rewards"
+                ],
+                "fullName": "🗃️  S23 When verifying ParachainStaking rewards 📁  S23C100 should snapshot the selected candidates for that round",
+                "status": "passed",
+                "title": "📁  S23C100 should snapshot the selected candidates for that round",
+                "duration": 22.737491999999293,
+                "failureMessages": [],
+                "location": {
+                    "line": 83,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S23 When verifying ParachainStaking rewards"
+                ],
+                "fullName": "🗃️  S23 When verifying ParachainStaking rewards 📁  S23C200 should have accurate collator stats in snapshot",
+                "status": "passed",
+                "title": "📁  S23C200 should have accurate collator stats in snapshot",
+                "duration": 3615.9664619999994,
+                "failureMessages": [],
+                "location": {
+                    "line": 99,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S23 When verifying ParachainStaking rewards"
+                ],
+                "fullName": "🗃️  S23 When verifying ParachainStaking rewards 📁  S23C300 should snapshot candidate delegation amounts correctly",
+                "status": "passed",
+                "title": "📁  S23C300 should snapshot candidate delegation amounts correctly",
+                "duration": 0.4476889999996274,
+                "failureMessages": [],
+                "location": {
+                    "line": 148,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S23 When verifying ParachainStaking rewards"
+                ],
+                "fullName": "🗃️  S23 When verifying ParachainStaking rewards 📁  S23C400 should snapshot delegate autocompound preferences correctly",
+                "status": "passed",
+                "title": "📁  S23C400 should snapshot delegate autocompound preferences correctly",
+                "duration": 0.36472199999934674,
+                "failureMessages": [],
+                "location": {
+                    "line": 256,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S23 When verifying ParachainStaking rewards"
+                ],
+                "fullName": "🗃️  S23 When verifying ParachainStaking rewards 📁  S23C500 rewards are given as expected",
+                "status": "passed",
+                "title": "📁  S23C500 rewards are given as expected",
+                "duration": 169578.92481199998,
+                "failureMessages": [],
+                "location": {
+                    "line": 338,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367306856,
+        "endTime": 1753367480074.9248,
+        "status": "passed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-staking-rewards.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S24 Verify staking round cleanup"
+                ],
+                "fullName": "🗃️  S24 Verify staking round cleanup 📁  S24C100 storage is cleaned for paid-out rounds",
+                "status": "skipped",
+                "title": "📁  S24C100 storage is cleaned for paid-out rounds",
+                "failureMessages": [],
+                "location": {
+                    "line": 57,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-staking-round-cleanup.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S25 Verify treasury consistency"
+                ],
+                "fullName": "🗃️  S25 Verify treasury consistency 📁  S25C100 should have value > 0",
+                "status": "skipped",
+                "title": "📁  S25C100 should have value > 0",
+                "failureMessages": [],
+                "location": {
+                    "line": 21,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-treasury-consistency.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S26 XCM Mode should be equal to Normal"
+                ],
+                "fullName": "🗃️  S26 XCM Mode should be equal to Normal 📁  S26C100 XCM Mode should be equal to Normal",
+                "status": "skipped",
+                "title": "📁  S26C100 XCM Mode should be equal to Normal",
+                "failureMessages": [],
+                "location": {
+                    "line": 16,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "Failed to connect provider 'viem' after 15 attempts: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-xcm-autopause.ts"
+    },
+    {
+        "assertionResults": [
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C100 should not have UnsupportedVersion errors on cumulusXcm queue",
+                "status": "skipped",
+                "title": "📁  S27C100 should not have UnsupportedVersion errors on cumulusXcm queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 97,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C200 should not have BadVersion errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C200 should not have BadVersion errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 123,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C300 should not have Barrier errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C300 should not have Barrier errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 147,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C400 should not have Overflow errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C400 should not have Overflow errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 173,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C500 should not have MultiLocationFull errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C500 should not have MultiLocationFull errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 199,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C600 should not have AssetNotFound errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C600 should not have AssetNotFound errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 229,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C700 should not have DestinationUnsupported errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C700 should not have DestinationUnsupported errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 257,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C800 should not have Transport errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C800 should not have Transport errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 287,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C900 should not have FailedToDecode errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C900 should not have FailedToDecode errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 313,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C1000 should not have UnhandledXcmVersion errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C1000 should not have UnhandledXcmVersion errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 341,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C1100 should not have WeightNotComputable errors on XCMP queue",
+                "status": "skipped",
+                "title": "📁  S27C1100 should not have WeightNotComputable errors on XCMP queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 371,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C1200 should have recent responses for opened HMRP channels",
+                "status": "skipped",
+                "title": "📁  S27C1200 should have recent responses for opened HMRP channels",
+                "failureMessages": [],
+                "location": {
+                    "line": 401,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C1300 should not have OverweightEnqueued errors on message queue",
+                "status": "skipped",
+                "title": "📁  S27C1300 should not have OverweightEnqueued errors on message queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 466,
+                    "column": 5
+                },
+                "meta": {}
+            },
+            {
+                "ancestorTitles": [
+                    "🗃️  S27 XCM Failures in past 1.00 hours should not be serious"
+                ],
+                "fullName": "🗃️  S27 XCM Failures in past 1.00 hours should not be serious 📁  S27C1400 should not have ProcessingFailed errors on message queue",
+                "status": "skipped",
+                "title": "📁  S27C1400 should not have ProcessingFailed errors on message queue",
+                "failureMessages": [],
+                "location": {
+                    "line": 498,
+                    "column": 5
+                },
+                "meta": {}
+            }
+        ],
+        "startTime": 1753367302669,
+        "endTime": 1753367302669,
+        "status": "failed",
+        "message": "",
+        "name": "/home/timbo/workspace/moonsong/moonbeam/test/suites/smoke/test-xcm-failures.ts"
+    }
+]
+}
