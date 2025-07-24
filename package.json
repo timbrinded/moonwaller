@@ -24,6 +24,12 @@
     "db:seed": "bun run src/db/seed.ts",
     "db:studio": "drizzle-kit studio",
     "db:reset": "bun run src/db/reset.ts",
+    "db:setup": "bun run src/db/setup.ts",
+    "db:setup:dev": "bun run src/db/setup-dev.ts",
+    "db:setup:test": "bun run src/db/setup-test.ts",
+    "db:setup:reset": "bun run src/db/setup.ts --reset",
+    "db:info": "bun run src/db/setup.ts --info",
+    "db:test-connections": "bun run scripts/test-db-environments.ts",
     "lint": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
@@ -45,6 +51,8 @@
     "@solidjs/start": "^1.1.7",
     "@tanstack/solid-table": "^8.21.3",
     "@tanstack/solid-virtual": "^3.13.12",
+    "drizzle-orm": "^0.44.3",
+    "postgres": "^3.4.7",
     "solid-js": "^1.9.7",
     "vinxi": "^0.5.8"
   },
