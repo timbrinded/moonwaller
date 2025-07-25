@@ -1,4 +1,7 @@
-// Query functions will be implemented in task 2.3
-// This file serves as the main export point for all query functions
+// Main export point for all query functions
+// Implements data access layer with Drizzle ORM for blockchain monitoring dashboard
 
-export const placeholder = 'Queries will be implemented in task 2.3';
+export * from './reports';
+export * from './testResults';
+export * from './analytics';
+export * from './search';
