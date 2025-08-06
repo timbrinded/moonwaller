@@ -466,9 +466,9 @@
         "ancestorTitles": [
             "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly"
         ],
-        "fullName": "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly 📁  S11C200 should have have ExtrinsicSuccess for all ethereum.transact",
+        "fullName": "🗃️  S11 ETH Failures in past 2.00 hours should be reported correctly 📁  S11C200 should have ExtrinsicSuccess for all ethereum.transact",
         "status": "skipped",
-        "title": "📁  S11C200 should have have ExtrinsicSuccess for all ethereum.transact",
+        "title": "📁  S11C200 should have ExtrinsicSuccess for all ethereum.transact",
         "failureMessages": [],
         "location": {
             "line": 132,
